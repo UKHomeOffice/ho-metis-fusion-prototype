@@ -1,0 +1,13 @@
+.metis-footer {
+  border-top: 1px solid #B1B4B6 !important;
+  background-color: #F3F2F1;
+  color: #0b0c0c;
+
+  &__link, a {
+    color: #3B3B3B;
+
+    &:active, &:hover, &:link, &:visited {
+      color: #3B3B3B;
+    }
+  }
+} 

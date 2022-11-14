@@ -1,0 +1,20 @@
+/* segoe-regular */
+@font-face {
+  font-family: 'Segoe';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/segoe_regular-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/segoe_regular-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* segoe-semibold */
+@font-face {
+  font-family: 'Segoe';
+  font-style: bold;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/segoe_semibold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/segoe_semibold-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+

@@ -1,0 +1,83 @@
+{% extends "metis-layout.html" %}
+
+{% block pageTitle %}
+Personalise your homepage - Metis - Home Office
+{% endblock %}
+
+{% set serviceName %}
+    Metis
+{% endset%}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <form action="index" method="post">
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">Personalise your homepage</h1>
+                    </legend>
+                    <div id="personalise-hint" class="govuk-hint">Select the sections you want to see.</div>
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise" name="my-tasks" type="checkbox" value="my tasks" {{ checked("my-tasks", "my tasks") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="my-tasks">My tasks</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-2" name="track-requests" type="checkbox" value="track my requests" {{ checked("track-requests", "track my requests") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="track-requests">Track my requests</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-3" name="annual-leave" type="checkbox" value="annual-leave" {{ checked("annual-leave", "annual leave") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="annual-leave">Annual leave</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-4" name="pay" type="checkbox" value="pay" {{ checked("pay", "pay") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="pay">Pay</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-5" name="team-absences" type="checkbox" value="team-absences" {{ checked("team-absences", "team absences") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="team-absences">Team absences</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-6" name="team-performance-rewards" type="checkbox" value="team-performance-rewards" {{ checked("team-performance-rewards", "team performance rewards") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="team-performance-rewards">Team performance rewards</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-7" name="find-someone" type="checkbox" value="find-someone" {{ checked("find-someone", "find someone") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="find-someone">Find someone</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-8" name="get-help" type="checkbox" value="get-help" {{ checked("get-help", "get help") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="get-help">Get help</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="personalise-9" name="guidance" type="checkbox" value="guidance" {{ checked("guidance", "guidance") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="guidance">Guidance</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="govuk-button-group govuk-!-margin-top-4">
+                    <button class="govuk-button" data-module="govuk-button">Save and return</button>
+                    <a class="govuk-link" href="index">Cancel</a>
+                </div>
+            </div>
+        </form>
+        <h2 class="govuk-heading-m govuk-!-margin-top-7">Help with personalisation</h2>
+        <ul class="govuk-list">
+            <li>
+                <a class="govuk-link" href="#">Creating shortcuts</a>
+            </li>
+            <li>
+                <a class="govuk-link" href="#">Hiding personal information</a>
+            </li>
+            <li>
+                <a class="govuk-link" href="#">Reordering your homepage</a>
+            </li>
+            <li>
+                <a class="govuk-link" href="#">Take a guided tour of Metis</a>
+            </li>
+          </ul>
+    </div>
+</div>  
+{% endblock %}
