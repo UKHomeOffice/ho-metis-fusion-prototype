@@ -131,6 +131,32 @@ value of $govuk-black #}
             </div>
         </div>
         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="metis-footer__content govuk-!-margin-top-8">
+                    A Home Office Digital, Data and Technology service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% if useAutoStoreData %}
+                    <a class="metis-footer__link" href="/prototype-admin/clear-data">Clear data</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% endif %}
+                    <a class="metis-footer__link" href="https://govuk-prototype-kit.herokuapp.com/">GOV.UK Prototype Kit {{ releaseVersion }}</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="govuk-footer__navigation">
+            <div class="govuk-footer__section govuk-grid-column-full">
+                <ul class="govuk-footer__list">
+                    {% if useAutoStoreData %}
+                    <li class="metis-footer__navigation-item">
+                    <a class="metis-footer__link" href="/prototype-admin/clear-data">Clear data</a>
+                    </li>
+                    {% endif %}
+                    <li class="metis-footer__navigation-item">
+                        <a class="metis-footer__link" href="https://govuk-prototype-kit.herokuapp.com/">GOV.UK Prototype Kit {{ releaseVersion }}</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+
+        <div class="govuk-grid-row">
             <div class="govuk-grid-column-one-half">
                 <div class="metis-footer__content">A Home Office Digital, Data and Technology service</div>
             </div>
@@ -148,7 +174,7 @@ value of $govuk-black #}
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </footer>
 {% endblock %}

@@ -11,12 +11,51 @@ Metis - Home Office
 {% block content %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-        <h1 class="govuk-heading-l govuk-!-margin-bottom-1"><a href="#" class="govuk-link govuk-link--no-visited-state">Jack Daniels</a></h1>
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-1">
+            <!-- <a href="#" class="govuk-link govuk-link--no-visited-state">Jack Daniels</a> -->
+            <!-- Trigger/Open The Modal -->
+            <button id="faux-link" class="govuk-heading-l govuk-!-margin-bottom-0">Jack Daniels</button>
+        </h1>
+
+        <!-- The Modal -->
+        <div id="my-modal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content govuk-!-padding-4">
+                <span class="close">&times;</span>
+                <dl class="govuk-summary-list govuk-!-margin-bottom-0">
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Business unit</dt>
+                        <dd class="govuk-summary-list__value">Home Office</dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Grade</dt>
+                        <dd class="govuk-summary-list__value">G6</dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">User person type</dt>
+                        <dd class="govuk-summary-list__value">Permanent</dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Metis number</dt>
+                        <dd class="govuk-summary-list__value">123456</dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Roles</dt>
+                        <dd class="govuk-summary-list__value">MTS Employee, MTS Line Manager</dd>
+                    </div>
+                    <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">Close</button>
+                </dl>
+            </div>
+        </div>
+
         <div class="my-details govuk-!-margin-bottom-6">
             <p class="metis-number govuk-body-s">Metis number: 123456</p>
             <p class="personalise-link govuk-body-s"><a href="personalise-page" class="govuk-link govuk-link--no-visited-state">Personalise this page</a></p>
         </div>
-        {% if data['my-tasks'] %}
+
+        {% for personalise in data["personalise"] %}
+        
+        {% if (personalise == "my-tasks") %}
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h1 class="govuk-heading-m">My tasks</h1>
@@ -126,8 +165,8 @@ Metis - Home Office
             </div>
         </div>
         {% endif %}
-
-        {% if data['track-requests'] %}
+        
+        {% if (personalise == "track-my-requests") %}
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h1 class="govuk-heading-m">Track my requests</h1>
@@ -235,56 +274,68 @@ Metis - Home Office
                     <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">View all ProcessSense requests</a></p>
                 </div>    
             </div>
-        </div>   
-        {% endif %}
+        </div> 
+        {% endif %} 
+
+        {% endfor %}     
     </div>
 </div>
+
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-half">
-        {% if data['annual-leave'] %}
+    {% for personalise in data["personalise"] %}
+
+    {% if (personalise == "annual-leave") %}
+    <div class="govuk-grid-column-one-half">   
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h3 class="govuk-heading-m">Annual leave</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">6 days remaining</p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Request leave</a></p>
-        </div>
-        {% endif %}
-    </div>
+        </div> 
+    </div> 
+    {% endif %}
+
+    {% if (personalise == "pay") %}
     <div class="govuk-grid-column-one-half">
-        {% if data['pay'] %}
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h3 class="govuk-heading-m">Pay</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">£1604.37</p>
             <p class="govuk-body">Sent to your bank account on 29 July 2022</p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">View payslip</a></p>
-        </div>
-        {% endif %}
+        </div>   
     </div>
+    {% endif %}
+    
+    {% if (personalise == "team-absences") %}
     <div class="govuk-grid-column-one-half">
-        {% if data['team-absences'] %}
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h3 class="govuk-heading-m">Team absences</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">2 open sickness absences</p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Manage absences</a></p>
         </div>
-        {% endif %}
     </div>
+    {% endif %}
+
+    {% if (personalise == "team-performance-rewards") %}
     <div class="govuk-grid-column-one-half">
-        {% if data['team-performance-rewards'] %}
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h3 class="govuk-heading-m">Team performance rewards</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">2 months since last reward</p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Submit rewards</a></p>
         </div>
-        {% endif %}
     </div>
-</div>
+    {% endif %}
+
+    {% endfor %}
+</div> 
+
+{% for personalise in data["personalise"] %}
+{% if (personalise == "find-someone") %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-        {% if data['find-someone'] %}
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="find-someone">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h3 class="govuk-heading-m">Find someone</h3>
@@ -295,23 +346,29 @@ Metis - Home Office
                 <input class="govuk-input" id="enter-name" name="enter-name" type="text">
             </div>
         </div>
-        {% endif %}
     </div>
-</div>  
+</div> 
+{% endif %}
+{% endfor %} 
+
+{% for personalise in data["personalise"] %}
+{% if (personalise == "get-help") %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-        {% if data['get-help'] %}
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="get-help">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h3 class="govuk-heading-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Get help</a></h3>
             <p class="govuk-body govuk-!-margin-bottom-2">Support for HR, finance and Metis issues.</p>
         </div>
-        {% endif %}
     </div>
 </div>  
+{% endif %}
+{% endfor %} 
+
+{% for personalise in data["personalise"] %}
+{% if (personalise == "guidance") %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full"> 
-        {% if data['guidance'] %}
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="guidance">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
             <h3 class="govuk-heading-m">Guidance</h3>
@@ -336,9 +393,11 @@ Metis - Home Office
                 </div>
             </div>
         </div>
-        {% endif %}
     </div>
 </div> 
+{% endif %}
+{% endfor %} 
+
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <div class="govuk-phase-banner">
