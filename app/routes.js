@@ -9,7 +9,7 @@ router.get("/prototype-start", (req, res) => {
 })
 
 router.get("/prototype-start-general", (req, res) => {
-    req.session.data["personalise"] = ["my-tasks-2", "track-my-requests-2", "annual-leave-2", "pay-2", "expenses-2", "learning-2", "find-someone-2", "get-help-2", "guidance-2"]
+    req.session.data["personalise"] = ["my-tasks", "track-my-requests", "annual-leave", "pay", "expenses", "learning", "find-someone", "get-help", "guidance"]
     res.redirect("general/index")
 })
 
