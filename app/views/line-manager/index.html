@@ -398,6 +398,20 @@ Metis - Home Office
 {% endif %}
 {% endfor %} 
 
+{% for personalise in data["personalise"] %}
+{% if (personalise == "news") %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="news">
+            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <h3 class="govuk-heading-m">News and annoucements</h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">TBC</p>
+        </div>
+    </div>
+</div>  
+{% endif %}
+{% endfor %} 
+
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <div class="govuk-phase-banner">
