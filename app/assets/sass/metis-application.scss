@@ -193,3 +193,7 @@ $govuk-font-family: inherit;
     text-decoration: none;
     cursor: pointer;
   }
+
+  .govuk-notification-banner__content > * {
+    max-width: none !important;
+}
