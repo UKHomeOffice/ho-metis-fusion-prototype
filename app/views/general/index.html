@@ -12,7 +12,6 @@ Metis - Home Office
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <h1 class="govuk-heading-l govuk-!-margin-bottom-1">
-            <!-- <a href="#" class="govuk-link govuk-link--no-visited-state">Jack Daniels</a> -->
             <!-- Trigger/Open The Modal -->
             <button id="faux-link" class="govuk-heading-l govuk-!-margin-bottom-0">Mary Pickford</button>
         </h1>
@@ -21,7 +20,6 @@ Metis - Home Office
         <div id="my-modal" class="modal">
         <!-- Modal content -->
             <div class="modal-content govuk-!-padding-4">
-                <span class="close">&times;</span>
                 <dl class="govuk-summary-list govuk-!-margin-bottom-0">
                     <div class="govuk-summary-list__row">
                         <dt class="govuk-summary-list__key">Business unit</dt>
@@ -43,7 +41,7 @@ Metis - Home Office
                         <dt class="govuk-summary-list__key">Roles</dt>
                         <dd class="govuk-summary-list__value">MTS Employee</dd>
                     </div>
-                    <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">Close</button>
+                    <button id="modal-close-btn" class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">Close</button>
                 </dl>
             </div>
         </div>
@@ -371,39 +369,20 @@ Metis - Home Office
     <div class="govuk-grid-column-full"> 
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="guidance">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
-            <h3 class="govuk-heading-m">Guidance</h3>
+            <h3 class="govuk-heading-m"><a href="https://ehdg.cx.ukg.oraclecloud.com/app/home" class="govuk-link govuk-link--no-visited-state">Guidance and requests</a></h3>
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-one-half">
                     <div class="card small-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-                        <h4 class="govuk-heading-s"><a href="#" class="govuk-link govuk-link--no-visited-state">Human resources</a></h4>
+                        <h4 class="govuk-heading-s"><a href="https://ehdg.cx.ukg.oraclecloud.com/app/products/detail/p/3/~/human-resources" class="govuk-link govuk-link--no-visited-state">Human resources</a></h4>
                         <p class="govuk-body govuk-!-margin-bottom-2">Includes leave, sickness and pay.</p>
                     </div>
                 </div>
                 <div class="govuk-grid-column-one-half">
                     <div class="card small-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-                        <h4 class="govuk-heading-s"><a href="#" class="govuk-link govuk-link--no-visited-state">Finance and procurement</a></h4>
-                        <p class="govuk-body govuk-!-margin-bottom-2">Includes travel and expenses. Includes buying goods and services.</p>
+                        <h4 class="govuk-heading-s"><a href="https://ehdg.cx.ukg.oraclecloud.com/app/products/detail/p/2/~/finance-and-procurement" class="govuk-link govuk-link--no-visited-state">Finance and procurement</a></h4>
+                        <p class="govuk-body govuk-!-margin-bottom-2">Includes travel, expenses and buying goods and services.</p>
                     </div>
                 </div>
-
-                <!-- <div class="govuk-grid-column-one-third">
-                    <div class="card small-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-                        <h4 class="govuk-heading-s"><a href="#" class="govuk-link govuk-link--no-visited-state">Human resources</a></h4>
-                        <p class="govuk-body govuk-!-margin-bottom-2">Includes leave, sickness and pay.</p>
-                    </div>
-                </div>
-                <div class="govuk-grid-column-one-third">
-                    <div class="card small-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-                        <h4 class="govuk-heading-s"><a href="#" class="govuk-link govuk-link--no-visited-state">Finance</a></h4>
-                        <p class="govuk-body govuk-!-margin-bottom-2">Includes travel and expenses.</p>
-                    </div>
-                </div>
-                <div class="govuk-grid-column-one-third">
-                    <div class="card small-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-                        <h4 class="govuk-heading-s"><a href="#" class="govuk-link govuk-link--no-visited-state">Procurement</a></h4>
-                        <p class="govuk-body govuk-!-margin-bottom-2">Includes buying goods and services.</p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -412,13 +391,16 @@ Metis - Home Office
 {% endfor %} 
 
 {% for personalise in data["personalise"] %}
-{% if (personalise == "news") %}
+{% if (personalise == "metis-alerts") %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-        <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="news">
+        <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="metis-alerts">
             <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
-            <h3 class="govuk-heading-m">News</h3>
-            <p class="govuk-body govuk-!-margin-bottom-2">TBC</p>
+            <h3 class="govuk-heading-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Metis alerts</a></h3>
+            <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Basware unavailable</a><br /><span class="grey-text govuk-body-s">published 29 September 2022</span></p>
+            <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Overpayments and December payroll deadlines</a><br /><span class="grey-text govuk-body-s">published 27 September 2022</span></p>
+            <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">SSCL Christmas operating hours</a><br /><span class="grey-text govuk-body-s">published 27 September 2022</span></p>
+            <p class="govuk-body govuk-!-margin-top-6"><a href="#" class="govuk-link govuk-link--no-visited-state">Read more Metis alerts</a></p>
         </div>
     </div>
 </div>  
