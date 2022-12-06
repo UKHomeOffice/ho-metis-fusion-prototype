@@ -1,0 +1,119 @@
+{% extends "metis-layout.html" %}
+
+{% block pageTitle %}
+My shortcuts - Metis - Home Office
+{% endblock %}
+
+{% set serviceName %}
+    Metis
+{% endset%}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <form action="#" method="post">
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">My shortcuts</h1>
+                    </legend>
+                    <div class="govuk-button-group govuk-!-margin-top-4 govuk-!-margin-bottom-6">
+                        <button class="govuk-button" data-module="govuk-button">Save and return</button>
+                        <a class="govuk-link" href="#">Cancel</a>
+                    </div>
+                    <!-- <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts" name="shortcuts" type="checkbox" value="guidance" {{ checked("shortcuts", "guidance") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts">Guidance</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-2" name="shortcuts" type="checkbox" value="get-help" {{ checked("shortcuts", "get-help") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-2">Get help</label>
+                        </div>
+                        <div class="govuk-checkboxes__item govuk-!-margin-bottom-6">
+                            <input class="govuk-checkboxes__input" id="shortcuts-3" name="shortcuts" type="checkbox" value="find-someone" {{ checked("shortcuts", "find-someone") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-3">Find someone</label>
+                        </div>
+                    </div> -->
+
+                    <h2 class="govuk-heading-m clear">My information</h2>
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts" name="shortcuts" type="checkbox" value="pay" {{ checked("shortcuts", "pay") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts">Pay</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-2" name="shortcuts" type="checkbox" value="leave-absences" {{ checked("shortcuts", "leave-absences") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-2">Leave and absences</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-3" name="shortcuts" type="checkbox" value="expenses" {{ checked("shortcuts", "expenses") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-3">Expenses</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-4" name="shortcuts" type="checkbox" value="overtime" {{ checked("shortcuts", "overtime") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-4">Overtime</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-5" name="shortcuts" type="checkbox" value="personal-information" {{ checked("shortcuts", "personal-information") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-5">Personal information</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-6" name="shortcuts" type="checkbox" value="employee-dashboard" {{ checked("shortcuts", "employee-dashboard") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-6">Employee dashboard</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-7" name="shortcuts" type="checkbox" value="my-tasks" {{ checked("shortcuts", "my-tasks") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-7">My tasks</label>
+                        </div> 
+                        <div class="govuk-checkboxes__item govuk-!-margin-bottom-6">
+                            <input class="govuk-checkboxes__input" id="shortcuts-8" name="shortcuts" type="checkbox" value="my-requests" {{ checked("shortcuts", "my-requests") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-8">My requests</label>
+                        </div> 
+                    </div> 
+
+                    <h2 class="govuk-heading-m clear">Procurement</h2>
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-19" name="shortcuts" type="checkbox" value="purchase-requisitions" {{ checked("shortcuts", "purchase-requisitions") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-19">Purchase requisitions</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-20" name="shortcuts" type="checkbox" value="suppliers" {{ checked("shortcuts", "suppliers") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-20">Suppliers</label>
+                        </div>
+                        <div class="govuk-checkboxes__item govuk-!-margin-bottom-6">
+                            <input class="govuk-checkboxes__input" id="shortcuts-21" name="shortcuts" type="checkbox" value="receipts" {{ checked("shortcuts", "receipts") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-21">Receipts</label>
+                        </div>
+                    </div>
+
+                    <h2 class="govuk-heading-m clear">Tools</h2>
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-22" name="shortcuts" type="checkbox" value="import-export-files" {{ checked("shortcuts", "import-export-files") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-22">Import and export files</label>
+                        </div>
+                        <div class="govuk-checkboxes__item govuk-!-margin-bottom-6">
+                            <input class="govuk-checkboxes__input" id="shortcuts-23" name="shortcuts" type="checkbox" value="schedule-processes" {{ checked("shortcuts", "schedule-processes") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-23">Schedule processes</label>
+                        </div>
+                    </div>
+
+                    <h2 class="govuk-heading-m clear">Reports and analytics</h2>
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="shortcuts-24" name="shortcuts" type="checkbox" value="transactional-reporting" {{ checked("shortcuts", "transactional-reporting") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-24">Transactional reporting</label>
+                        </div>
+                        <div class="govuk-checkboxes__item govuk-!-margin-bottom-6">
+                            <input class="govuk-checkboxes__input" id="shortcuts-25" name="shortcuts" type="checkbox" value="reporting-analytics-centre" {{ checked("shortcuts", "reporting-analytics-centre") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="shortcuts-25">Reporting and analytics centre</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</div>  
+{% endblock %}
