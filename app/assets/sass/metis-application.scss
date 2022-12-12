@@ -29,8 +29,16 @@ $govuk-font-family: inherit;
 
 .info-card {
     background-color: rgba(243, 242, 241, .5);
-    text-align: center;
-    
+    text-align: center; 
+}
+
+.info-card #annual-leave-more-menu,
+.info-card #pay-more-menu,
+.info-card #team-absences-more-menu,
+.info-card #team-performance-rewards-more-menu,
+.info-card #expenses-more-menu,
+.info-card #learning-more-menu {
+    text-align: left !important;
 }
 
 @media screen and (min-width: 640px) { 

@@ -64,7 +64,16 @@ Metis - Home Office
         
         {% if (personalise == "my-tasks") %}
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="my-tasks-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="my-tasks-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+                <hr class="govuk-section-break govuk-section-break--visible" />
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Create a task</a>
+                <a href=" #" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Get help with a task</a>
+              </div>
             <h1 class="govuk-heading-m">My tasks</h1>
             <div class="govuk-tabs govuk-!-margin-bottom-0" data-module="govuk-tabs">
                 <h2 class="govuk-tabs__title">Contents</h2>
@@ -175,7 +184,16 @@ Metis - Home Office
         
         {% if (personalise == "track-my-requests") %}
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="track-my-requests-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="track-my-requests-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+                <hr class="govuk-section-break govuk-section-break--visible" />
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Submit a request</a>
+                <a href=" #" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Get help with requests</a>
+              </div>
             <h1 class="govuk-heading-m">Track my requests</h1>
             <div class="govuk-tabs govuk-!-margin-bottom-0" data-module="govuk-tabs">
                 <h2 class="govuk-tabs__title">Contents</h2>
@@ -294,7 +312,16 @@ Metis - Home Office
     {% if (personalise == "annual-leave") %}
     <div class="govuk-grid-column-one-half">   
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="annual-leave-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="annual-leave-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Show leave in hours</a>
+                <hr class="govuk-section-break govuk-section-break--visible" />
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Get help with leave</a>
+              </div>
             <h3 class="govuk-heading-m">Annual leave</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">6 days (44.4 hours) remaining</p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Request leave</a></p>
@@ -305,7 +332,16 @@ Metis - Home Office
     {% if (personalise == "pay") %}
     <div class="govuk-grid-column-one-half">
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="pay-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="pay-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide pay amount</a>
+                <hr class="govuk-section-break govuk-section-break--visible" />
+                <a href=" #" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Get help with pay</a>
+              </div>
             <h3 class="govuk-heading-m">Pay</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">£1604.37</p>
             <p class="govuk-body">Sent to your bank account on 29 July 2022</p>
@@ -317,7 +353,15 @@ Metis - Home Office
     {% if (personalise == "expenses") %}
     <div class="govuk-grid-column-one-half">
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="expenses-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="expenses-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+                <hr class="govuk-section-break govuk-section-break--visible" />
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Get help with expenses</a>
+              </div>
             <h3 class="govuk-heading-m">Expenses</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">1 open claim, 1 rejected</p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Claim expenses</a></p>
@@ -328,7 +372,15 @@ Metis - Home Office
     {% if (personalise == "learning") %}
     <div class="govuk-grid-column-one-half">
         <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="learning-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="learning-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+                <hr class="govuk-section-break govuk-section-break--visible" />
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Get help with learning</a>
+              </div>
             <h3 class="govuk-heading-m">Learning</h3>
             <p class="govuk-body govuk-!-font-size-27 grey-text">1 course to complete</p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">View courses</a></p>
@@ -344,7 +396,15 @@ Metis - Home Office
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="find-someone">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="find-someone-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="find-someone-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+                <hr class="govuk-section-break govuk-section-break--visible" />
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Get help finding someone</a>
+              </div>
             <h3 class="govuk-heading-m">Find someone</h3>
             <p class="govuk-body">View contact information and team details.</p>
             <div class="govuk-form-group govuk-!-margin-bottom-2">
@@ -363,7 +423,13 @@ Metis - Home Office
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="get-help">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="get-help-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="get-help-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+              </div>
             <h3 class="govuk-heading-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Get help</a></h3>
             <p class="govuk-body govuk-!-margin-bottom-2">Support for HR, finance and Metis issues.</p>
         </div>
@@ -377,7 +443,13 @@ Metis - Home Office
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full"> 
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="guidance">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="guidance-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="guidance-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+              </div>
             <h3 class="govuk-heading-m"><a href="https://ehdg.cx.ukg.oraclecloud.com/app/home" class="govuk-link govuk-link--no-visited-state">Guidance and requests</a></h3>
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-one-half">
@@ -404,7 +476,13 @@ Metis - Home Office
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <div class="card govuk-!-padding-4 govuk-!-margin-bottom-6" id="metis-alerts">
-            <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+            <a id="metis-alerts-more-menu-button" href="#" onclick="return false;">
+                <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+              </a>
+              <div id="metis-alerts-more-menu" class="more-menu__dropdown more-menu-hidden">
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Move this section</a>
+                <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Hide this section</a>
+              </div>
             <h3 class="govuk-heading-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Metis alerts</a></h3>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Basware unavailable</a><br /><span class="grey-text govuk-body-s">published 29 September 2022</span></p>
             <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Overpayments and December payroll deadlines</a><br /><span class="grey-text govuk-body-s">published 27 September 2022</span></p>
