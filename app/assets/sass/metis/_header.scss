@@ -1,11 +1,20 @@
 .metis-header {
   background-color: #4C2C92;
 
-  &__link, a {
+  // CDM START //
+  position: sticky;
+  z-index: 2;
+  // CDM END //
+
+  &__link,
+  a {
     text-decoration: none;
     color: #fff;
 
-    &:active, &:hover, &:link, &:visited {
+    &:active,
+    &:hover,
+    &:link,
+    &:visited {
       color: #fff;
     }
 
@@ -31,19 +40,21 @@
     width: 100%;
 
     @include govuk-media-query($from: mobile, $until: tablet) {
+      display: flex;
     }
+
     @include govuk-media-query($from: tablet) {
       display: flex;
     }
 
-    > *:last-child {
+    >*:last-child {
       margin-right: auto;
     }
   }
 
   &__logo {
     display: block;
-    width: 110px;
+    width: 81px;
     height: auto;
     margin-right: 0;
     margin-bottom: govuk-spacing(3);
@@ -53,14 +64,21 @@
       margin-right: 10%;
       margin-bottom: 0;
     }
+
     @include govuk-media-query($from: tablet) {
-      width: 150px;
+      width: 81px;
       margin-right: 20%;
       margin-bottom: 0;
     }
   }
 
-  &__logo-svg {
+  &__main-menu {
+    padding-top: 2px;
+    padding-right: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__title {
@@ -83,12 +101,12 @@
       }
 
       a:hover {
-        text-decoration: underline!important;
+        text-decoration: underline !important;
       }
     }
 
     li:first-child {
-      padding-left:0;
+      padding-left: 0;
     }
 
     li {
@@ -142,7 +160,8 @@
           color: #0b0c0c !important;
         }
 
-        &:hover, &focus {
+        &:hover,
+        &focus {
           color: #0b0c0c;
           background-color: inherit;
           text-decoration: none;
