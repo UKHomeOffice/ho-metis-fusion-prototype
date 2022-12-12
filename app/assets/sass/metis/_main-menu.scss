@@ -13,7 +13,8 @@
   }
 
   &__container {
-    height: 100%;
+    /* height: 100%; */
+    height: 500%; /* fake height */
     width: 400px;
     position: absolute;
     left: 0;
