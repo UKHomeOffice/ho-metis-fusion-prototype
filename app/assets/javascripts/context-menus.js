@@ -10,6 +10,18 @@ $("#track-my-requests-more-menu-button").click((event) => {
   $("#track-my-requests-more-menu").toggleClass("more-menu-hidden");
 });
 
+// show/hide annual leave context meny when clicking on the menu button
+$("#annual-leave-more-menu-button").click((event) => {
+    event.stopPropagation();
+    $("#annual-leave-more-menu").toggleClass("more-menu-hidden");
+  });
+
+// show/hide pay context meny when clicking on the menu button
+$("#pay-more-menu-button").click((event) => {
+    event.stopPropagation();
+    $("#pay-more-menu").toggleClass("more-menu-hidden");
+  });
+
 
 
 
@@ -24,5 +36,15 @@ $(document.documentElement).click(() => {
   if (!$("#track-my-requests-more-menu").hasClass("more-menu-hidden")) {
     $("#track-my-requests-more-menu").addClass("more-menu-hidden");
   }
+
+// annual leave
+    if (!$("#annual-leave-more-menu").hasClass("more-menu-hidden")) {
+        $("#annual-leave-more-menu").addClass("more-menu-hidden");
+}
+
+// pay
+if (!$("#pay-more-menu").hasClass("more-menu-hidden")) {
+    $("#pay-more-menu").addClass("more-menu-hidden");
+}
 
 })

@@ -61,11 +61,11 @@ Metis
         <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
       </a>
       <div id="my-tasks-more-menu" class="more-menu__dropdown more-menu-hidden">
-        <a href="#" onclick="return false;">Option 1</a>
-        <a href="#" onclick="return false;">A longer option 2</a>
-        <a href="#" onclick="return false;">An even longer option 3</a>
-        <a href=" #" onclick="return false;">Option 4</a>
-        <a href="#" onclick="return false;">Option 5</a>
+        <a href="#" onclick="return false;">Move this section</a>
+        <a href="#" onclick="return false;">Hide this section</a>
+        <hr class="govuk-section-break govuk-section-break--visible" />
+        <a href="#" onclick="return false;">Create a task</a>
+        <a href=" #" onclick="return false;">Get help with a task</a>
       </div>
       <h1 class="govuk-heading-m">My tasks</h1>
       <div class="govuk-tabs govuk-!-margin-bottom-0" data-module="govuk-tabs">
@@ -191,11 +191,11 @@ Metis
         <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
       </a>
       <div id="track-my-requests-more-menu" class="more-menu__dropdown more-menu-hidden">
-        <a href="#" onclick="return false;">Option 1</a>
-        <a href="#" onclick="return false;">A longer option 2</a>
-        <a href="#" onclick="return false;">An even longer option 3</a>
-        <a href="#" onclick="return false;">Option 4</a>
-        <a href="#" onclick="return false;">Option 5</a>
+        <a href="#" onclick="return false;">Move this section</a>
+        <a href="#" onclick="return false;">Hide this section</a>
+        <hr class="govuk-section-break govuk-section-break--visible" />
+        <a href="#" onclick="return false;">Submit a request</a>
+        <a href=" #" onclick="return false;">Get help with requests</a>
       </div>
       <h1 class="govuk-heading-m">Track my requests</h1>
       <div class="govuk-tabs govuk-!-margin-bottom-0" data-module="govuk-tabs">
@@ -330,7 +330,16 @@ Metis
   {% if (personalise == "annual-leave") %}
   <div class="govuk-grid-column-one-half">
     <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-      <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+        <a id="annual-leave-more-menu-button" href="#" onclick="return false;">
+            <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+          </a>
+          <div id="annual-leave-more-menu" class="more-menu__dropdown more-menu-hidden">
+            <a href="#" onclick="return false;">Move this section</a>
+            <a href="#" onclick="return false;">Hide this section</a>
+            <hr class="govuk-section-break govuk-section-break--visible" />
+            <a href="#" onclick="return false;">Show leave in hours</a>
+            <a href="#" onclick="return false;">Get help with leave</a>
+          </div>
       <h3 class="govuk-heading-m">Annual leave</h3>
       <p class="govuk-body govuk-!-font-size-27 grey-text">6 days (44.4 hours) remaining</p>
       <p class="govuk-body govuk-!-margin-bottom-2"><a href="#" class="govuk-link govuk-link--no-visited-state">Request
@@ -342,7 +351,16 @@ Metis
   {% if (personalise == "pay") %}
   <div class="govuk-grid-column-one-half">
     <div class="card info-card govuk-!-padding-4 govuk-!-margin-bottom-6">
-      <a href="#"><img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" /></a>
+        <a id="pay-more-menu-button" href="#" onclick="return false;">
+            <img src="/public/images/ico-overflow-v.svg" alt="more menu" class="more-menu" />
+          </a>
+          <div id="pay-more-menu" class="more-menu__dropdown more-menu-hidden">
+            <a href="#" onclick="return false;">Move this section</a>
+            <a href="#" onclick="return false;">Hide this section</a>
+            <a href="#" onclick="return false;">Hide pay amount</a>
+            <hr class="govuk-section-break govuk-section-break--visible" />
+            <a href=" #" onclick="return false;">Get help with pay</a>
+          </div>
       <h3 class="govuk-heading-m">Pay</h3>
       <p class="govuk-body govuk-!-font-size-27 grey-text">£1604.37</p>
       <p class="govuk-body">Sent to your bank account on 29 July 2022</p>
