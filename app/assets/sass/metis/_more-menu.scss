@@ -1,0 +1,22 @@
+.more-menu {
+
+  &__dropdown {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    border: 1px solid #b1b4b6;
+    border-radius: 6px;
+    background-color: #ffffff;
+
+    a {
+      padding: 16px 24px;
+    }
+  }
+}
+
+.more-menu-hidden {
+  display: none;
+}
