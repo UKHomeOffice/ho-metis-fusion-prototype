@@ -17,9 +17,17 @@
       </a>
     </div>
 
+    {% if (data["user-type"] == "line-manager") %}
+    <h1>Show this for line managers</h1>
+    {% endif %}
+
+    {% if (data["user-type"] == "general") %}
+    <h1>Show this for general users</h1>
+    {% endif %}
+
     <div class="metis-main-menu__links">
-        <h2 class="govuk-heading-s">My shortcuts</h2>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Add</a>
+      <h2 class="govuk-heading-s">My shortcuts</h2>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Add</a>
     </div>
 
     <div class="metis-main-menu__links">
@@ -29,48 +37,50 @@
     </div>
 
     <div class="metis-main-menu__links">
-        <h2 class="govuk-heading-s">My information</h2>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Pay</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Leave and absences</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Expenses</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Overtime</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Personal information</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Employee dashboard</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">My tasks</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">My requests</a>
+      <h2 class="govuk-heading-s">My information</h2>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Pay</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Leave and absences</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Expenses</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Overtime</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Personal information</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Employee dashboard</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">My tasks</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">My requests</a>
     </div>
 
     <div class="metis-main-menu__links">
-        <h2 class="govuk-heading-s">My team</h2>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team leave and absences</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team expenses</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team overtime</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Arrival confirmation</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team end dates</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Loans and secondment</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team working pattern changes</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Annualised working hours</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Position management</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Line manager dashboard</a>
+      <h2 class="govuk-heading-s">My team</h2>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team leave and absences</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team expenses</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team overtime</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Arrival confirmation</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team end dates</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Loans and secondment</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Team working pattern
+        changes</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Annualised working hours</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Position management</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Line manager dashboard</a>
     </div>
 
     <div class="metis-main-menu__links">
-        <h2 class="govuk-heading-s">Procurement</h2>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Purchase requisitions</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Suppliers</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Receipts</a>
+      <h2 class="govuk-heading-s">Procurement</h2>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Purchase requisitions</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Suppliers</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Receipts</a>
     </div>
 
     <div class="metis-main-menu__links">
-        <h2 class="govuk-heading-s">Tools</h2>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Import and export files</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Schedule processes</a>
+      <h2 class="govuk-heading-s">Tools</h2>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Import and export files</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Schedule processes</a>
     </div>
 
     <div class="metis-main-menu__links">
-        <h2 class="govuk-heading-s">Reports and analytics</h2>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Transactional reporting</a>
-        <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Reporting and analytics centre</a>
+      <h2 class="govuk-heading-s">Reports and analytics</h2>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Transactional reporting</a>
+      <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Reporting and analytics
+        centre</a>
     </div>
   </div>
 </nav>
