@@ -58,9 +58,9 @@ GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
-<header class="metis-header" role="banner" data-module="metis-header">
+<header class="metis-header" role="banner" data-module="metis-header" style="background-color: #f1f1f1;">
   <div class="metis-header__container metis-width-container">
-    <div class="metis-header__main" style="padding-bottom: 10px;">
+    <div class="metis-header__main" style="padding-bottom: 0px;padding-top: 5px;">
 
       <!--
       <div id="metis-header__main-menu" class="metis-header__main-menu">
@@ -77,19 +77,85 @@ GOV.UK Prototype Kit
           <svg width="81" height="26" viewBox="0 0 81 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M25 13C25 19.6274 19.6274 25 13 25C6.37258 25 1 19.6274 1 13C1 6.37258 6.37258 1 13 1C19.6274 1 25 6.37258 25 13Z"
-              fill="#9126B1" stroke="white" stroke-width="2" />
+              fill="#9126B1" stroke="#9126B1" stroke-width="2" />
             <path
               d="M7.6535 8.004V18H9.7115V10.986H9.7395L12.1895 18H13.8835L16.3335 10.916H16.3615V18H18.4195V8.004H15.3255L13.1135 14.878H13.0855L10.7475 8.004H7.6535Z"
               fill="white" />
             <path
               d="M33.6 5.72V20H35.4V8.12H35.44L39.9 20H41.52L45.98 8.12H46.02V20H47.82V5.72H45.22L40.7 17.72L36.2 5.72H33.6ZM57.8819 13.84H51.9419C51.9685 13.44 52.0552 13.0667 52.2019 12.72C52.3485 12.36 52.5485 12.0467 52.8019 11.78C53.0552 11.5133 53.3552 11.3067 53.7019 11.16C54.0619 11 54.4619 10.92 54.9019 10.92C55.3285 10.92 55.7152 11 56.0619 11.16C56.4219 11.3067 56.7285 11.5133 56.9819 11.78C57.2485 12.0333 57.4552 12.34 57.6019 12.7C57.7619 13.06 57.8552 13.44 57.8819 13.84ZM59.5219 16.72H57.8419C57.6952 17.4 57.3885 17.9067 56.9219 18.24C56.4685 18.5733 55.8819 18.74 55.1619 18.74C54.6019 18.74 54.1152 18.6467 53.7019 18.46C53.2885 18.2733 52.9485 18.0267 52.6819 17.72C52.4152 17.4 52.2219 17.04 52.1019 16.64C51.9819 16.2267 51.9285 15.7933 51.9419 15.34H59.6819C59.7085 14.7133 59.6485 14.0533 59.5019 13.36C59.3685 12.6667 59.1152 12.0267 58.7419 11.44C58.3819 10.8533 57.8952 10.3733 57.2819 10C56.6819 9.61333 55.9219 9.42 55.0019 9.42C54.2952 9.42 53.6419 9.55333 53.0419 9.82C52.4552 10.0867 51.9419 10.46 51.5019 10.94C51.0752 11.42 50.7419 11.9867 50.5019 12.64C50.2619 13.2933 50.1419 14.0133 50.1419 14.8C50.1685 15.5867 50.2819 16.3133 50.4819 16.98C50.6952 17.6467 51.0085 18.22 51.4219 18.7C51.8352 19.18 52.3419 19.5533 52.9419 19.82C53.5552 20.0867 54.2752 20.22 55.1019 20.22C56.2752 20.22 57.2485 19.9267 58.0219 19.34C58.7952 18.7533 59.2952 17.88 59.5219 16.72ZM63.8041 9.66V6.56H62.1041V9.66H60.3441V11.16H62.1041V17.74C62.1041 18.22 62.1507 18.6067 62.2441 18.9C62.3374 19.1933 62.4774 19.42 62.6641 19.58C62.8641 19.74 63.1174 19.8533 63.4241 19.92C63.7441 19.9733 64.1241 20 64.5641 20H65.8641V18.5H65.0841C64.8174 18.5 64.5974 18.4933 64.4241 18.48C64.2641 18.4533 64.1374 18.4067 64.0441 18.34C63.9507 18.2733 63.8841 18.18 63.8441 18.06C63.8174 17.94 63.8041 17.78 63.8041 17.58V11.16H65.8641V9.66H63.8041ZM69.5527 7.8V5.72H67.8527V7.8H69.5527ZM67.8527 9.66V20H69.5527V9.66H67.8527ZM73.2263 16.74H71.5263C71.5529 17.38 71.6863 17.9267 71.9263 18.38C72.1663 18.82 72.4863 19.18 72.8863 19.46C73.2863 19.7267 73.7463 19.92 74.2663 20.04C74.7863 20.16 75.3329 20.22 75.9062 20.22C76.4263 20.22 76.9463 20.1667 77.4663 20.06C77.9996 19.9667 78.4729 19.7933 78.8863 19.54C79.3129 19.2867 79.6529 18.9533 79.9063 18.54C80.1729 18.1267 80.3063 17.6067 80.3063 16.98C80.3063 16.4867 80.2063 16.0733 80.0063 15.74C79.8196 15.4067 79.5663 15.1333 79.2463 14.92C78.9396 14.6933 78.5796 14.5133 78.1663 14.38C77.7663 14.2467 77.3529 14.1333 76.9263 14.04C76.5263 13.9467 76.1263 13.86 75.7263 13.78C75.3263 13.6867 74.9663 13.58 74.6463 13.46C74.3263 13.3267 74.0596 13.1667 73.8462 12.98C73.6462 12.78 73.5462 12.5333 73.5462 12.24C73.5462 11.9733 73.6129 11.76 73.7463 11.6C73.8796 11.4267 74.0529 11.2933 74.2663 11.2C74.4796 11.0933 74.7129 11.02 74.9663 10.98C75.2329 10.94 75.4929 10.92 75.7463 10.92C76.0263 10.92 76.2996 10.9533 76.5663 11.02C76.8463 11.0733 77.0996 11.1667 77.3263 11.3C77.5529 11.4333 77.7396 11.6133 77.8863 11.84C78.0329 12.0533 78.1196 12.3267 78.1463 12.66H79.8463C79.8063 12.0333 79.6729 11.5133 79.4463 11.1C79.2196 10.6733 78.9129 10.34 78.5263 10.1C78.1529 9.84667 77.7196 9.67333 77.2263 9.58C76.7329 9.47333 76.1929 9.42 75.6063 9.42C75.1529 9.42 74.6929 9.48 74.2263 9.6C73.7729 9.70667 73.3596 9.88 72.9863 10.12C72.6263 10.3467 72.3263 10.6467 72.0863 11.02C71.8596 11.3933 71.7463 11.84 71.7463 12.36C71.7463 13.0267 71.9129 13.5467 72.2463 13.92C72.5796 14.2933 72.9929 14.5867 73.4863 14.8C73.9929 15 74.5396 15.16 75.1263 15.28C75.7129 15.3867 76.2529 15.5133 76.7463 15.66C77.2529 15.7933 77.6729 15.9733 78.0063 16.2C78.3396 16.4267 78.5063 16.76 78.5063 17.2C78.5063 17.52 78.4263 17.7867 78.2663 18C78.1063 18.2 77.8996 18.3533 77.6463 18.46C77.4063 18.5667 77.1396 18.64 76.8463 18.68C76.5529 18.72 76.2729 18.74 76.0063 18.74C75.6596 18.74 75.3196 18.7067 74.9863 18.64C74.6663 18.5733 74.3729 18.4667 74.1063 18.32C73.8529 18.16 73.6463 17.9533 73.4863 17.7C73.3263 17.4333 73.2396 17.1133 73.2263 16.74Z"
-              fill="white" />
+              fill="#4C2C92" />
           </svg>
         </a>
       </div>
 
-      <div class="govuk-form-group" style="width: 30%;margin-bottom: 12px;">
-        <input class="govuk-input search_icon" id="width-20" name="width-20" type="text" value="Find people" style="border: none; font-size: 1rem;height: 2rem;width: 300px;position: relative;padding-left: 35px;">
+      <!-- 
+      <div class="metis-header__title">
+        <a aria-current="page" class="metis-header__link metis-header__link--service-name metis-header__link--active"
+          href="/">
+          {{ serviceName }}
+        </a>
+      </div> 
+      -->
+
+      <div class="govuk-header__content" style="width: 100%;text-align: right; margin-right: 0px;margin-top: 2px;">
+        <!--
+        <a href="#" class="govuk-header__link govuk-header__service-name">
+          Service name
+        </a>
+        -->
+        <nav aria-label="Menu" class="govuk-header__navigation ">
+          <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden>Menu</button>
+          <ul id="navigation" class="govuk-header__navigation-list">
+            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+              <a class="govuk-header__link" href="#" style="color: #1d70b8;">
+                Help & support
+              </a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="#" style="color: #1d70b8;">
+                Training
+              </a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="#" style="color: #1d70b8;">
+                Directory
+              </a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="#" style="color: #1d70b8;">
+                Shop
+              </a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="#" style="color: #1d70b8;">
+                Tools
+              </a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="#" style="color: #1d70b8;">
+                My account
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<header class="metis-header" role="banner" data-module="metis-header" style="background-color: #4C2C92;">
+  <div class="metis-header__container metis-width-container" style="background-color: #4C2C92;">
+    <div class="metis-header__main" style="padding-top: 20px;padding-bottom: 0px;">
+
+      <div class="govuk-form-group" style="width: 30%;margin-bottom: 0px;">
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 10px; color: #fff;">Dashboard</h1>
+
+      </div>
+
+      <div class="govuk-form-group" style="width: 70%;margin-bottom: 0px;text-align: right;">
+        <input class="govuk-input search_icon" id="width-20" name="width-20" type="text" value="Find people" style="border: none; font-size: 1rem;height: 2rem;width: 400px;position: relative;padding-left: 35px;margin-right: 0px;margin-top: 5px;">
        <!--
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#afafaf}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
       -->
@@ -104,122 +170,67 @@ GOV.UK Prototype Kit
         margin-right: 50px;
         }
       </style>
-      
-
-      
-
-
-
-      <!-- 
-      <div class="metis-header__title">
-        <a aria-current="page" class="metis-header__link metis-header__link--service-name metis-header__link--active"
-          href="/">
-          {{ serviceName }}
-        </a>
-      </div> 
-      -->
-
-      <div class="govuk-header__content" style="width: 60%;text-align: right; margin-right: 0px;margin-top: 2px;">
-        <!--
-        <a href="#" class="govuk-header__link govuk-header__service-name">
-          Service name
-        </a>
-        -->
-        <nav aria-label="Menu" class="govuk-header__navigation ">
-          <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden>Menu</button>
-          <ul id="navigation" class="govuk-header__navigation-list">
-            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-              <a class="govuk-header__link" href="#">
-                Help & support
-              </a>
-            </li>
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
-                Training
-              </a>
-            </li>
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
-                Directory
-              </a>
-            </li>
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
-                Shop
-              </a>
-            </li>
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
-                Tools
-              </a>
-            </li>
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
-                My account
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
 
     </div>
   </div>
+
 </header>
 
-<header class="metis-header" role="banner" data-module="metis-header" style="background-color: #896EC2;">
-  <div class="metis-header__container metis-width-container" style="background-color: #896EC2;">
+<header class="metis-header" role="banner" data-module="metis-header" style="background-color: #4C2C92;">
+  <div class="metis-header__container metis-width-container" style="background-color: #4C2C92;">
     <div class="metis-header__main" style="padding-top: 10px;padding-bottom: 0px;">
+
       <div class="govuk-header__content" style="text-align: left; padding-left: 2px;width: 100%;">
         <nav aria-label="Menu" class="govuk-header__navigation">
           <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden>Menu</button>
           <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-              <a class="govuk-header__link" href="#" style="color: #ffffff;border-bottom: #ffffff 6px solid;padding-bottom: 7px;">
+              <a class="govuk-header__link" href="#" style="color: #fff;border-bottom: #fff 6px solid;padding-bottom: 7px;">
                 Dashboard
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Time
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Absences
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Pay
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Expenses
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Career & performance
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Benefits
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Documents
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 Purchases
               </a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="#">
+              <a class="govuk-header__link" href="#" style="color: #fff;">
                 My team
               </a>
             </li>
@@ -229,10 +240,8 @@ GOV.UK Prototype Kit
     </div>
   </div>
 
-
-
-
 </header>
+
 {% endblock %}
 
 {% block beforeContent %}
