@@ -12,7 +12,7 @@ Metis - Home Office
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-        <div style="background-color: #FFEFCB;border-left: 8px solid #F3AB34;padding: 1rem;">
+        <div style="background-color: #F2DFDF;border-left: 8px solid #C52C2A;padding: 1rem;">
              <div style="background: none;padding: 0;margin-bottom: 0;">
                 <p style="margin-bottom: 0px;"><strong>Metis system announcements</strong><br>Metis will be unavailable on the weekend of 3-4 June, between 11pm and 7am.</p>
             </div>
@@ -20,7 +20,7 @@ Metis - Home Office
 
         <br>
 
-        <div style="background-color: #F4F0FC;border-left: 8px solid #4C2C92;padding: 1rem;">
+        <div style="background-color: #DBEFFB;border-left: 8px solid #2B8CC4;padding: 1rem;">
              <div style="background: none;padding: 0;margin-bottom: 0;">
                 <p style="margin-bottom: 0px;">
                   <strong>You have 2 tasks: </strong>
@@ -50,7 +50,7 @@ Metis - Home Office
             </li>
             <li class="govuk-tabs__list-item">
               <a class="govuk-tabs__tab" href="#past-month">
-                [Professional role here]
+                [Role name]
               </a>
             </li>
             <li class="govuk-tabs__list-item">
@@ -60,9 +60,179 @@ Metis - Home Office
             </li>
           </ul>
 
-          <div class="govuk-tabs__panel" id="past-day" style="border: 1px solid #b1b4b6; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;">
+          <div class="govuk-tabs__panel" id="past-day" style="border: 1px solid #b1b4b6; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;padding: 30px 0px 20px 0px;">
 
-            <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Me</h2>
+            <!--<h2 class="govuk-heading-m" style="margin-bottom: 10px;">Me</h2>-->
+
+            <div class="govuk-grid-row" style="margin-bottom: 10px;">
+              <div class="govuk-grid-column-one-third">
+                <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FEF5E1;text-align: left;padding: 10px 20px 5px 20px;margin-top: 0px;text-align: center;">
+                  <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Annual leave</h2>
+                  <div class="govuk-panel__body">
+                    <p style="margin-bottom: 10px;">6 days (44.4 hours) remaining</a></p>
+                    <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Request leave</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-third">
+                <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FEF5E1;text-align: left;padding: 10px 20px 5px 20px;margin-top: 0px;text-align: center;">
+                  <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Pay</h2>
+                  <div class="govuk-panel__body">
+                    <p style="margin-bottom: 10px;">£1,604.37</a></p>
+                    <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Check your payslip</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-third">
+                <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FEF5E1;text-align: left;padding: 10px 20px 5px 20px;margin-top: 0px;text-align: center;">
+                  <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Expenses</h2>
+                  <div class="govuk-panel__body">
+                    <p style="margin-bottom: 10px;">1 open claim | 1 rejected</a></p>
+                    <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Claim expenses</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-panel govuk-panel--confirmation" style="background-color: #F7F7F7;text-align: left;padding: 10px 20px 5px 20px;margin-top: 0px;margin-bottom: 30px;">
+
+              <div class="govuk-form-group" style="display: flex; flex-direction: row;margin-bottom: 0px;margin-top: 5px;">
+
+                <h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 100px;padding-top: 3px;">My tasks</h2>
+
+                <span class="govuk-label" for="sort" style="position: relative;margin-right: 10px;padding-top: 7px;">Sort by</span>
+
+                <div class="govuk-form-group" style="position: relative;margin-right: 30px;padding-top: 0px;">
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="published" selected>All (32)</option>
+                    <option value="updated">My team (21)</option>
+                    <option value="views">Created by me (4)</option>
+                  </select>
+                </div>
+
+                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="text-align: right;margin-right: 125px;padding-top: 0px;">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lorum">
+                    <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                      Display active tasks only
+                    </label>
+                  </div>
+                </div>
+
+                <button class="govuk-button" data-module="govuk-button" style="margin-bottom: 35px;padding-top: 10x;">
+                  Create new task
+                </button>
+
+              </div>
+
+              <div class="govuk-panel__body">
+                
+                <table class="govuk-table" style="margin-bottom: 20px;">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header" width="500">Tasks (32)</th>
+                            <th scope="col" class="govuk-table__header" width="200">Created by</th>
+                            <th scope="col" class="govuk-table__header" width="200">Created on</th>
+                            <th scope="col" class="govuk-table__header" width="150">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Renew Jason Smith's security clearance</a></td>
+                            <td class="govuk-table__cell">Carla Bugatti</td>
+                            <td class="govuk-table__cell">14 Sep 22</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Urgent</strong></td> 
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Confirm order 467499 receipt</a></td>
+                            <td class="govuk-table__cell">Mike Kowasky</td>
+                            <td class="govuk-table__cell">12 Sep 22</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag">In progress</strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Review Ruby Taylor's expenses</a></td>
+                            <td class="govuk-table__cell">Alison Prichard</td>
+                            <td class="govuk-table__cell">09 Sep 22</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Pending</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">View all tasks</a></p>
+
+              </div>
+            </div>
+
+            <div class="govuk-panel govuk-panel--confirmation" style="background-color: #F7F7F7;text-align: left;padding: 10px 20px 5px 20px;margin-top: 0px;">
+
+              <div class="govuk-form-group" style="display: flex; flex-direction: row;margin-bottom: 0px;margin-top: 5px;">
+
+                <h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 70px;padding-top: 3px;">My requests</h2>
+
+                <span class="govuk-label" for="sort" style="position: relative;margin-right: 10px;padding-top: 7px;">Sort by</span>
+
+                <div class="govuk-form-group" style="position: relative;margin-right: 30px;padding-top: 0px;">
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="published" selected>All (14)</option>
+                    <option value="updated">My team (9)</option>
+                    <option value="views">Requested by me (2)</option>
+                  </select>
+                </div>
+
+                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="text-align: right;margin-right: 55px;padding-top: 0px;">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lorum">
+                    <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                      Display active requests only
+                    </label>
+                  </div>
+                </div>
+
+                <button class="govuk-button" data-module="govuk-button" style="margin-bottom: 35px;padding-top: 10x;">
+                  Create new request
+                </button>
+
+              </div>
+
+              <div class="govuk-panel__body">
+                
+                <table class="govuk-table" style="margin-bottom: 20px;">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header" width="500">Requests (14)</th>
+                            <th scope="col" class="govuk-table__header" width="200">Assigned by</th>
+                            <th scope="col" class="govuk-table__header" width="200">Assigned on</th>
+                            <th scope="col" class="govuk-table__header" width="150">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Renew Jason Smith's security clearance</a></td>
+                            <td class="govuk-table__cell">Carla Bugatti</td>
+                            <td class="govuk-table__cell">14 Sep 22</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag">In progress</strong></td> 
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Confirm order 467499 receipt</a></td>
+                            <td class="govuk-table__cell">Mike Kowasky</td>
+                            <td class="govuk-table__cell">12 Sep 22</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag">In progress</strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Review Ruby Taylor's expenses</a></td>
+                            <td class="govuk-table__cell">Alison Prichard</td>
+                            <td class="govuk-table__cell">09 Sep 22</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Rejected</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">View all requests</a></p>
+
+              </div>
+            </div>
             
           </div>
 
@@ -87,23 +257,6 @@ Metis - Home Office
 
         </div>
 
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
         <br>
         <br>
@@ -111,9 +264,6 @@ Metis - Home Office
 
     </div>
 </div>
-
-
-
 
 
 
