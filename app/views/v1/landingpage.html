@@ -119,7 +119,7 @@ Metis - Home Office
                         </svg>
                       </a>
                     </div>
-                    <div id="pay-more-menu" class="more-menu__dropdown more-menu-hidden" style="right: 640px;top: 804px;">
+                    <div id="pay-more-menu" class="more-menu__dropdown more-menu-hidden" style="position: absolute; top: 600px; left: 900px;width: 200px;">
                       <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">Create new task</a>
                       <hr class="govuk-section-break govuk-section-break--visible">
                       <a href="#" onclick="return false;" class="govuk-link govuk-link--no-visited-state">View all tasks</a>
@@ -203,7 +203,7 @@ Metis - Home Office
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lorum">
                     <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
-                      Display active tasks only
+                      Display open tasks only
                     </label>
                   </div>
                 </div>
@@ -238,30 +238,30 @@ Metis - Home Office
                     <thead class="govuk-table__head">
                         <tr class="govuk-table__row">
                             <th scope="col" class="govuk-table__header" width="500">Tasks (32)</th>
-                            <th scope="col" class="govuk-table__header" width="200">Created by</th>
+                            <th scope="col" class="govuk-table__header" width="200">Name</th>
                             <th scope="col" class="govuk-table__header" width="200">Created on</th>
-                            <th scope="col" class="govuk-table__header" width="150">Status</th>
+                            <th scope="col" class="govuk-table__header" width="190">Status</th>
                         </tr>
                     </thead>
                     <tbody class="govuk-table__body">
                         <tr class="govuk-table__row">
                             
-                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Renew Jason Smith's security clearance</a></td>
-                            <td class="govuk-table__cell">Carla Bugatti</td>
-                            <td class="govuk-table__cell">14 Sep 22</td>
-                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Action</strong></td> 
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Mandatory training to complete</a></td>
+                            <td class="govuk-table__cell"> </td>
+                            <td class="govuk-table__cell">6 July 2023</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">ACTION</strong></td> 
                         </tr>
                         <tr class="govuk-table__row">
-                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Confirm order 467499 receipt</a></td>
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Manager changed</a></td>
                             <td class="govuk-table__cell">Mike Kowasky</td>
-                            <td class="govuk-table__cell">12 Sep 22</td>
-                            <td class="govuk-table__cell"><strong class="govuk-tag">Reminder</strong></td>
+                            <td class="govuk-table__cell">3 July 2023</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag">FOR INFORMATION</strong></td>
                         </tr>
                         <tr class="govuk-table__row">
-                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Review Ruby Taylor's expenses</a></td>
+                            <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Expense report</a></td>
                             <td class="govuk-table__cell">Alison Prichard</td>
-                            <td class="govuk-table__cell">09 Sep 22</td>
-                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Escalated</strong></td>
+                            <td class="govuk-table__cell">29 June 2023</td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">APPROVED</strong></td>
                         </tr>
                     </tbody>
                 </table>
@@ -278,8 +278,8 @@ Metis - Home Office
                 <!--<h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 70px;padding-top: 3px;">My requests</h2>-->
 
                 <h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 5px;padding-top: 3px;">
-                  My request 
-                  <span style="padding-right: 50px;vertical-align: middle;">
+                  My requests 
+                  <span style="padding-right: 40px;vertical-align: middle;">
                     <a id="expenses-more-menu-button" href="#0" onclick="return false;" style="color:#1d70b8;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
@@ -302,7 +302,7 @@ Metis - Home Office
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lorum">
                     <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
-                      Display active requests only
+                      Display open requests only
                     </label>
                   </div>
                 </div>
@@ -338,8 +338,8 @@ Metis - Home Office
                         <tr class="govuk-table__row">
                             <th scope="col" class="govuk-table__header" width="500">Requests (14)</th>
                             <th scope="col" class="govuk-table__header" width="200">Service request</th>
-                            <th scope="col" class="govuk-table__header" width="200">'Created on</th>
-                            <th scope="col" class="govuk-table__header" width="150">Status</th>
+                            <th scope="col" class="govuk-table__header" width="200">Created on</th>
+                            <th scope="col" class="govuk-table__header" width="190">Status</th>
                         </tr>
                     </thead>
                     <tbody class="govuk-table__body">
@@ -466,7 +466,7 @@ Metis - Home Office
 
               <div class="govuk-form-group" style="display: flex; flex-direction: row;margin-bottom: 0px;margin-top: 5px;">
 
-                <h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 70px;padding-top: 3px;margin-right: 720px;">Get help and support</h2>
+                <h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 0px;padding-top: 3px;margin-right: 780px;">Get help and support</h2>
 
                 <div style="margin-top: 10px;">
                   <a id="get-help-more-menu-button" href="#0" onclick="return false;" style="color:#1d70b8;">
@@ -522,7 +522,7 @@ Metis - Home Office
 
               <div class="govuk-form-group" style="display: flex; flex-direction: row;margin-bottom: 0px;margin-top: 5px;">
 
-                <h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 70px;padding-top: 3px;margin-right: 664px;">Metis news and announcements</h2>
+                <h2 class="govuk-heading-m" style="margin-bottom: 0px;padding-right: 0px;padding-top: 3px;margin-right: 664px;">Metis news and announcements</h2>
 
                 <div style="margin-top: 10px;">
                   <a id="metis-alerts-more-menu-button" href="#0" onclick="return false;" style="color:#1d70b8;">
@@ -547,9 +547,9 @@ Metis - Home Office
               <table class="govuk-table" style="margin-bottom: 20px;">
                   <thead class="govuk-table__head">
                       <tr class="govuk-table__row">
-                          <th scope="col" class="govuk-table__header" width="900">Items (3)</th>
+                          <th scope="col" class="govuk-table__header" width="900"> </th>
                           <th scope="col" class="govuk-table__header" width="200">Published on</th>
-                          <th scope="col" class="govuk-table__header" width="200">Expire on</th>
+                          <!--<th scope="col" class="govuk-table__header" width="200">Expire on</th>-->
                       </tr>
                   </thead>
                   <tbody class="govuk-table__body">
@@ -557,17 +557,17 @@ Metis - Home Office
                           
                           <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Reminder – Overpayments and July payroll deadlines</a></td>
                           <td class="govuk-table__cell">12 June 2023</td>
-                          <td class="govuk-table__cell">22 June 2023</td>
+                          <!--<td class="govuk-table__cell">22 June 2023</td>-->
                       </tr>
                       <tr class="govuk-table__row">
                           <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Basware unavailable Saturday 24 June 2023</a></td>
                           <td class="govuk-table__cell">19 June 2023</td>
-                          <td class="govuk-table__cell">29 June 2023</td>
+                          <!--<td class="govuk-table__cell">29 June 2023</td>-->
                       </tr>
                       <tr class="govuk-table__row">
                           <td class="govuk-table__cell"><a href="#0" class="govuk-link govuk-link--no-visited-state" style="color:#1d70b8;">Claiming overtime public holiday hours for AHA/AAA colleagues</a></td>
                           <td class="govuk-table__cell">5 June 2023</td>
-                          <td class="govuk-table__cell">15 June 2023</td>
+                          <!--<td class="govuk-table__cell">15 June 2023</td>-->
                       </tr>
                   </tbody>
               </table>
