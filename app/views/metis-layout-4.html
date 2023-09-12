@@ -1,0 +1,156 @@
+{#- We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework. -#}
+{%- set assetPath = '/govuk/assets' -%}
+
+{% extends "govuk/template.njk" %}
+
+{% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/character-count/macro.njk" import govukCharacterCount %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/cookie-banner/macro.njk" import govukCookieBanner %}
+{% from "govuk/components/date-input/macro.njk" import govukDateInput %}
+{% from "govuk/components/details/macro.njk" import govukDetails %}
+{% from "govuk/components/error-message/macro.njk" import govukErrorMessage %}
+{% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+{% from "govuk/components/fieldset/macro.njk" import govukFieldset %}
+{% from "govuk/components/file-upload/macro.njk" import govukFileUpload %}
+{% from "govuk/components/input/macro.njk" import govukInput %}
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+{% from "govuk/components/pagination/macro.njk" import govukPagination %}
+{% from "govuk/components/panel/macro.njk" import govukPanel %}
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{% from "govuk/components/radios/macro.njk" import govukRadios %}
+{% from "govuk/components/select/macro.njk" import govukSelect %}
+{% from "govuk/components/skip-link/macro.njk" import govukSkipLink %}
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+{% from "govuk/components/table/macro.njk" import govukTable %}
+{% from "govuk/components/tabs/macro.njk" import govukTabs %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
+{% from "govuk/components/textarea/macro.njk" import govukTextarea %}
+{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+
+{% block head %}
+{% include "includes/metis-head.html" %}
+{% endblock %}
+
+{% block headIcons %}
+
+<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/public/images/ho-favicon.ico" type="image/x-icon">
+<link rel="mask-icon" href="/public/images/ho-mask-icon.svg" color="{{ themeColor | default('#0b0c0c') }}"> {# Hardcoded
+value of $govuk-black #}
+<link rel="apple-touch-icon" sizes="180x180" href="public/images/ho-apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="public/images/ho-apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="152x152" href="public/images/ho-apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" href="public/images/ho-apple-touch-icon.png">
+
+{% endblock %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<base href=https://ehdg--tst6.cx.ukg.oraclecloud.com/euf/generated/optimized/1693491401/themes/standard/>
+<link href="/euf/generated/optimized/1693491401/templates/standard.themes.standard.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" href="/euf/assets/images/favicon.png" type="image/png">
+
+<header role="banner" id="global-header" style="background-color: #4c2c92;padding-left: 0px;padding-right: 15px;width: 100%;">
+
+  <div class="header header-wrapper" id="yui_3_18_1_1_1694441376550_3838" style="background-color: #4c2c92;padding-left: 0px;padding-right: 15px;max-width: 1120px;margin: 0 auto;padding-top: 8px;padding-bottom: 8px;overflow: hidden;">
+
+    <div id="top_header" style="margin: 0;padding: 0;vertical-align: baseline;">
+
+      <a href="/"><img align="middle" src="/euf/assets/images/logo.png" id="metis_icon" aria-hidden="true"></a>
+
+      <a href="#0" id="yui_3_18_1_1_1694441376550_3837">Guidance and Requests </a>
+
+      <div class="header-right">
+
+        <div id="rn_SearchBarHeader_4" class="rn_SearchBarHeader rn_SimpleSearch">
+
+          <form id="rn_SearchBarHeader_4_SearchForm" onsubmit="return false;" role="search" class="site-search">
+
+            <div class="content">
+
+              <label for="rn_SearchBarHeader_4_SearchField" class="search-label"></label>
+
+              <input placeholder="Search " type="search" id="rn_SearchBarHeader_4_SearchField" name="rn_SearchBarHeader_4_SearchField" class="rn_SearchField search-element search-input js-class-toggle" maxlength="255" aria-label="">
+
+              <input id="rn_SearchBarHeader_4_Submit" class="submit" type="submit" value="Search">
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+                                                    
+    </div>
+
+    <div class="sub_links" style="padding: 14px 0px 14px 16px;">
+
+      <a href="#0">Human Resources</a>
+
+      <a href="#0">Finance and Procurement</a>
+
+      <span class="overview-right">
+
+        <img alt="image bell" align="top" src="/euf/assets/images/notification_bell_icon.png" id="bell_icon" aria-hidden="true">
+
+        <a id="my_requests" href="#0">My Requests</a>
+
+      </span>
+
+    </div>
+
+  </div>
+
+</header>
+
+<div class="metis-header__container metis-width-container">
+  <div class="metis-header__main" style="padding-top: 0px;padding-bottom: 0px;">
+    <a href="#" class="govuk-back-link">Back</a>
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/metis-main-menu.html" %}
+{% endblock %}
+
+{% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
+
+{% block footer %}
+
+<div class="metis-header__container metis-width-container" style="text-align:center;position: relative;">
+  <div class="metis-header__main" style="padding-top: 0px;background-color: #4C2C92;height: 45px;position: absolute;bottom: 0px;width: 1100px;">
+
+    <div>
+      <p></p>
+      <p style="color: #ffffff;">&nbsp;&nbsp;&nbsp; Is this page useful? &nbsp;&nbsp; 
+        <span><a href="#0" style="color: #ffffff;">Yes</a> &nbsp; <a href="#0" style="color: #ffffff;">No</a></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="text-align: right"><a href="#0" style="color: #ffffff;">Is there anything wrong with this page?</a>&nbsp;&nbsp;&nbsp;</span>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block bodyEnd %}
+{% block scripts %}
+{% include "includes/scripts.html" %}
+{% block pageScripts %}
+{% endblock %}
+{% endblock %}
+<!-- GOV.UK Prototype Kit {{releaseVersion}} -->
+{% endblock %}

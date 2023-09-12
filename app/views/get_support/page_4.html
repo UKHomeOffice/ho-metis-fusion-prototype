@@ -1,0 +1,82 @@
+{% extends "metis-layout-4.html" %}
+
+{% block pageTitle %}
+Metis - Home Office
+{% endblock %}
+
+{% set serviceName %}
+    Metis
+{% endset%}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l" style="margin-bottom: 30px;padding-right: 70px;padding-top: 0px;">Write your enquiry</h2>
+
+      <div class="govuk-form-group">
+        <h3 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--s" for="more-detail">
+            Enquiry
+          </label>
+        </h3>
+        <div id="more-detail-hint" class="govuk-hint">
+          Do not include personal or financial information, yiur email or Metis number as we will recognise this enquiry is from you.
+        </div>
+        <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-label--s" for="file-upload-1">
+          Upload a file to support your enquiry (optional)
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
+      </div>
+
+      <form action="page_5.html">
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button">Continue</button>
+          &nbsp;&nbsp;
+          <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+        </div>
+      </form>
+
+      <!--
+      <div class="govuk-button-group">
+        <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+        &nbsp;&nbsp;
+        <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel</a>
+      </div>
+      -->
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+  </div>
+</div>
+
+
+<script>
+  function myFunction() {
+ 
+      if(document.getElementById('option1').checked) {
+          document.getElementById('link').href = "page_3.html";
+      }
+      if(document.getElementById('option2').checked) {
+          document.getElementById('link').href = "page_7.html";
+      }
+      if(document.getElementById('option3').checked) {
+          document.getElementById('link').href = "#0";
+      }
+  }
+</script>
+
+
+
+{% endblock %}

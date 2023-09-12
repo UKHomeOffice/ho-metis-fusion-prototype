@@ -1,0 +1,97 @@
+{% extends "metis-layout-4.html" %}
+
+{% block pageTitle %}
+Metis - Home Office
+{% endblock %}
+
+{% set serviceName %}
+    Metis
+{% endset%}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l" style="margin-bottom: 30px;padding-right: 70px;padding-top: 0px;">How can we help you?</h2>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="signIn-hint">
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option1" name="signIn" type="radio" value="government-gateway" aria-describedby="option1">
+              <label class="govuk-label govuk-radios__label" for="option1">
+                Submit a question or incident
+              </label>
+              <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
+                For general questions related to HR, finance or using Metis.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option2" name="signIn" type="radio" value="govuk-one-login" aria-describedby="option2">
+              <label class="govuk-label govuk-radios__label" for="option2">
+                Find HR contacts
+              </label>
+              <div id="signIn-2-item-hint" class="govuk-hint govuk-radios__hint">
+                See a list of teams that deal with specialist areas.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option3" name="signIn" type="radio" value="government-gateway" aria-describedby="option3">
+              <label class="govuk-label govuk-radios__label" for="option3">
+                Find Finance and Procurement contacts
+              </label>
+              <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
+                See a list of teams that deal with specialist areas.
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--
+      <form action="4-what-changes.html">
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button">Continue</button>
+          &nbsp;&nbsp;
+          <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+        </div>
+      </form>
+      -->
+
+      <div class="govuk-button-group">
+        <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+        &nbsp;&nbsp;
+        <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel</a>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+  </div>
+</div>
+
+
+<script>
+  function myFunction() {
+ 
+      if(document.getElementById('option1').checked) {
+          document.getElementById('link').href = "page_3.html";
+      }
+      if(document.getElementById('option2').checked) {
+          document.getElementById('link').href = "page_7.html";
+      }
+      if(document.getElementById('option3').checked) {
+          document.getElementById('link').href = "#0";
+      }
+  }
+</script>
+
+
+
+{% endblock %}

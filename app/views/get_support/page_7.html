@@ -1,0 +1,259 @@
+{% extends "metis-layout-4.html" %}
+
+{% block pageTitle %}
+Metis - Home Office
+{% endblock %}
+
+{% set serviceName %}
+    Metis
+{% endset%}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l" style="margin-bottom: 30px;padding-right: 70px;padding-top: 0px;">Select a HR team</h2>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="signIn-hint">
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option1" name="signIn" type="radio" value="government-gateway" aria-describedby="option1">
+              <label class="govuk-label govuk-radios__label" for="option1">
+                Career Transition Service
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option2" name="signIn" type="radio" value="govuk-one-login" aria-describedby="option2">
+              <label class="govuk-label govuk-radios__label" for="option2">
+                Civil Service Learning (CSL) website
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option3" name="signIn" type="radio" value="government-gateway" aria-describedby="option3">
+              <label class="govuk-label govuk-radios__label" for="option3">
+                CSHR Casework Service
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option4" name="signIn" type="radio" value="government-gateway" aria-describedby="option4">
+              <label class="govuk-label govuk-radios__label" for="option4">
+                CSHR Casework Service for line managers
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option5" name="signIn" type="radio" value="government-gateway" aria-describedby="option5">
+              <label class="govuk-label govuk-radios__label" for="option5">
+                Departmental Secirity Unit (security clearance)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option6" name="signIn" type="radio" value="government-gateway" aria-describedby="option6">
+              <label class="govuk-label govuk-radios__label" for="option6">
+                Early Resolution Helpline
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option7" name="signIn" type="radio" value="government-gateway" aria-describedby="option7">
+              <label class="govuk-label govuk-radios__label" for="option7">
+                Employee Assistance Programme (EAP)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option8" name="signIn" type="radio" value="government-gateway" aria-describedby="option8">
+              <label class="govuk-label govuk-radios__label" for="option8">
+                Government recruitment Service (GRS)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option9" name="signIn" type="radio" value="government-gateway" aria-describedby="option9">
+              <label class="govuk-label govuk-radios__label" for="option9">
+                Health Assured (Capita)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option10" name="signIn" type="radio" value="government-gateway" aria-describedby="option10">
+              <label class="govuk-label govuk-radios__label" for="option10">
+                Health and Safety
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option11" name="signIn" type="radio" value="government-gateway" aria-describedby="option11">
+              <label class="govuk-label govuk-radios__label" for="option11">
+                Health Management Ltd (Occupational Health)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option12" name="signIn" type="radio" value="government-gateway" aria-describedby="option12">
+              <label class="govuk-label govuk-radios__label" for="option12">
+                HMPO Learning
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option13" name="signIn" type="radio" value="government-gateway" aria-describedby="option13">
+              <label class="govuk-label govuk-radios__label" for="option13">
+                Home Office Honours team
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option14" name="signIn" type="radio" value="government-gateway" aria-describedby="option14">
+              <label class="govuk-label govuk-radios__label" for="option14">
+                Leadership and Management Development
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option15" name="signIn" type="radio" value="government-gateway" aria-describedby="option15">
+              <label class="govuk-label govuk-radios__label" for="option15">
+                Learning and Development e-Learning
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option16" name="signIn" type="radio" value="government-gateway" aria-describedby="option16">
+              <label class="govuk-label govuk-radios__label" for="option16">
+                Learning team
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option17" name="signIn" type="radio" value="government-gateway" aria-describedby="option17">
+              <label class="govuk-label govuk-radios__label" for="option17">
+                Pensions: MyCSP contact centre
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option18" name="signIn" type="radio" value="government-gateway" aria-describedby="option18">
+              <label class="govuk-label govuk-radios__label" for="option18">
+                Resourcing Consultants
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option19" name="signIn" type="radio" value="government-gateway" aria-describedby="option19">
+              <label class="govuk-label govuk-radios__label" for="option19">
+                Senior Civil Service (SCS) employees
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option20" name="signIn" type="radio" value="government-gateway" aria-describedby="option20">
+              <label class="govuk-label govuk-radios__label" for="option20">
+                Student Loans Company
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option21" name="signIn" type="radio" value="government-gateway" aria-describedby="option21">
+              <label class="govuk-label govuk-radios__label" for="option21">
+                Trade Union contacts
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="option22" name="signIn" type="radio" value="government-gateway" aria-describedby="option22">
+              <label class="govuk-label govuk-radios__label" for="option22">
+                Working overseas
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--
+      <form action="page_8.html">
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button">Continue</button>
+          &nbsp;&nbsp;
+          <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+        </div>
+      </form>
+      -->
+
+      <div class="govuk-button-group">
+        <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+        &nbsp;&nbsp;
+        <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel</a>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+  </div>
+</div>
+
+
+<script>
+  function myFunction() {
+ 
+      if(document.getElementById('option1').checked) {
+          document.getElementById('link').href = "page_8.html";
+      }
+      if(document.getElementById('option2').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option3').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option4').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option5').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option6').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option7').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option8').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option9').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option10').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option11').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option12').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option13').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option14').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option15').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option16').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option17').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option18').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option19').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option20').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option21').checked) {
+          document.getElementById('link').href = "#0";
+      }
+      if(document.getElementById('option22').checked) {
+          document.getElementById('link').href = "#0";
+      }
+  }
+</script>
+
+
+
+{% endblock %}
